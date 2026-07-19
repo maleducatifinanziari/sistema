@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Mappa — Sistema in 5 Fasi — Maleducati Finanziari</title>
+  <meta name="description" content="Scarica la mappa gratuita e scopri il sistema in 5 fasi per costruire la tua serenità economica passo dopo passo.">
+  <meta property="og:title" content="La mappa completa per gestire i tuoi soldi">
+  <meta property="og:description" content="Il sistema in 5 fasi per smettere di arrancare a fine mese e costruire la tua serenità economica. Scarica la mappa gratuita.">
+  <meta property="og:type" content="website">
+
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1484404588815255');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1484404588815255&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- Fine Meta Pixel Code -->
+
+  <!-- Google Fonts: Antonio + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- MailerLite fonts -->
+  <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1784201");</style>
+
+  <style>
+    /* ============================================================
+       RESET + BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    :root {
+      --mf-navy:       #003a64;
+      --mf-blue:       #54a2d2;
+      --mf-light:      #a9cee8;
+      --mf-white:      #ffffff;
+      --mf-yellow:     #f5c518;
+      --mf-font-title: 'Antonio', sans-serif;
+      --mf-font-body:  'DM Sans', sans-serif;
+    }
+
+    body {
+      font-family: var(--mf-font-body);
+      color: var(--mf-navy);
+      background: var(--mf-white);
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    /* ============================================================
+       HERO
+       ============================================================ */
+    .mf-hero {
+      flex: 1;
+      background: var(--mf-white);
+      display: flex;
+      align-items: flex-start;
+      padding: 36px 24px 48px;
+    }
+
+    .mf-hero-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 440px;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .mf-hero-copy {}
+
+    .mf-hero h1 {
+      font-family: var(--mf-font-title);
+      font-size: clamp(38px, 5.5vw, 68px);
+      font-weight: 700;
+      color: var(--mf-navy);
+      line-height: 1.06;
+      letter-spacing: -0.5px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    .mf-hero h1 em {
+      font-style: normal;
+      color: var(--mf-navy);
+    }
+
+    .mf-hero-subtitle {
+      font-family: var(--mf-font-body);
+      font-size: 19px;
+      color: var(--mf-navy);
+      line-height: 1.65;
+      margin-bottom: 8px;
+      max-width: 480px;
+    }
+
+    .mf-hero-detail {
+      font-family: var(--mf-font-body);
+      font-size: 16px;
+      color: var(--mf-navy);
+      line-height: 1.65;
+      max-width: 440px;
+      margin-bottom: 20px;
+    }
+
+    .mf-benefit-label {
+      font-family: var(--mf-font-body);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--mf-navy);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 14px;
+    }
+
+    .mf-benefit-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .mf-benefit-list li {
+      font-family: var(--mf-font-body);
+      font-size: 15px;
+      color: var(--mf-navy);
+      padding-left: 24px;
+      position: relative;
+      line-height: 1.5;
+    }
+    .mf-benefit-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--mf-navy);
+      font-weight: 700;
+    }
+
+    /* ============================================================
+       CARD FORM
+       ============================================================ */
+    .mf-form-card {
+      background: var(--mf-navy);
+      border-radius: 20px;
+      padding: 40px 36px;
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.15);
+    }
+
+    .mf-form-card-title {
+      font-family: var(--mf-font-title);
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--mf-white);
+      line-height: 1.15;
+      margin-bottom: 8px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .mf-form-card-sub {
+      font-family: var(--mf-font-body);
+      font-size: 14px;
+      color: var(--mf-white);
+      text-align: center;
+      margin-bottom: 28px;
+      line-height: 1.5;
+    }
+
+    /* ============================================================
+       OVERRIDE MAILERLITE
+       ============================================================ */
+    #mlb2-39174043.ml-form-embedContainer {
+      box-sizing: border-box;
+      display: block;
+      width: 100% !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper {
+      background-color: transparent !important;
+      border: none !important;
+      border-radius: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+      display: block !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper.embedDefault,
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper.embedPopup,
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper.embedForm {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody {
+      padding: 0 !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedContent {
+      display: none;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-formContent {
+      margin: 0 0 16px 0; width: 100%;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow {
+      margin: 0 0 12px 0; width: 100%;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow.ml-last-item {
+      margin: 0;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input {
+      background-color: #ffffff !important;
+      color: var(--mf-navy) !important;
+      border-color: rgba(255, 255, 255, 0.3) !important;
+      border-radius: 8px !important;
+      border-width: 1px !important;
+      font-family: var(--mf-font-body) !important;
+      font-size: 15px !important;
+      padding: 14px 16px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-fieldRow input::placeholder {
+      color: #a0b4c4 !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow {
+      margin: 12px 0 16px 0; width: 100%; float: left;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow label {
+      display: flex !important;
+      align-items: flex-start !important;
+      gap: 8px !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      cursor: pointer;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow input[type="checkbox"] {
+      position: static !important;
+      opacity: 1 !important;
+      z-index: auto !important;
+      margin: 3px 0 0 0 !important;
+      width: 16px !important;
+      height: 16px !important;
+      min-width: 16px !important;
+      flex-shrink: 0 !important;
+      accent-color: #f5c518;
+      cursor: pointer;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::before,
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description::after {
+      display: none !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description,
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description p {
+      color: rgba(255, 255, 255, 0.6) !important;
+      font-family: var(--mf-font-body) !important;
+      font-size: 11px !important;
+      line-height: 1.55 !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-checkboxRow .label-description p a {
+      color: rgba(255, 255, 255, 0.85) !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit {
+      margin: 0; float: left; width: 100%;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button {
+      background-color: var(--mf-yellow) !important;
+      color: var(--mf-navy) !important;
+      border-radius: 8px !important;
+      font-family: var(--mf-font-body) !important;
+      font-size: 16px !important;
+      font-weight: 700 !important;
+      padding: 16px !important;
+      width: 100% !important;
+      letter-spacing: 0.5px;
+      transition: background 0.3s ease, transform 0.3s ease !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit button:hover {
+      background-color: #e0b210 !important;
+      transform: scale(1.02);
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody form {
+      margin: 0; width: 100%;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody {
+      padding: 24px 0 8px !important;
+      text-align: center;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent h4 {
+      font-family: var(--mf-font-title) !important;
+      font-size: 28px !important;
+      color: var(--mf-white) !important;
+      margin-bottom: 8px !important;
+    }
+    #mlb2-39174043.ml-form-embedContainer .ml-form-embedWrapper .ml-form-successBody .ml-form-successContent p {
+      font-family: var(--mf-font-body) !important;
+      color: var(--mf-light) !important;
+      font-size: 15px !important;
+    }
+    .ml-error input { border-color: red !important; }
+    .ml-error .label-description,
+    .ml-error .label-description p,
+    .ml-error label:first-child { color: #ff0000 !important; }
+
+    /* ============================================================
+       TESTIMONIANZE
+       ============================================================ */
+    .mf-testimonianze {
+      background: var(--mf-white);
+      padding: 72px 24px;
+    }
+    .mf-testimonianze-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    .mf-testimonianze h2 {
+      font-family: var(--mf-font-title);
+      font-size: clamp(24px, 3vw, 38px);
+      font-weight: 700;
+      color: var(--mf-navy);
+      text-align: center;
+      margin-bottom: 44px;
+    }
+    .mf-testi-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .mf-testi-card {
+      background: var(--mf-white);
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 2px 16px rgba(0, 58, 100, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .mf-testi-stars {
+      color: #f5a623;
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+    .mf-testi-text {
+      font-family: var(--mf-font-body);
+      font-size: 14px;
+      color: #334e68;
+      line-height: 1.75;
+      flex: 1;
+      font-style: italic;
+    }
+    .mf-testi-name {
+      font-family: var(--mf-font-body);
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--mf-navy);
+      padding-top: 12px;
+      border-top: 1px solid rgba(0, 58, 100, 0.08);
+    }
+
+    @media (max-width: 768px) {
+      .mf-testi-grid { grid-template-columns: 1fr; }
+      .mf-testimonianze { padding: 56px 24px; }
+    }
+
+    /* ============================================================
+       CHI SIAMO
+       ============================================================ */
+    .mf-chisiamo {
+      background: var(--mf-navy);
+      padding: 72px 24px;
+    }
+    .mf-chisiamo-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      gap: 64px;
+      align-items: center;
+    }
+    .mf-chisiamo-copy h2 {
+      font-family: var(--mf-font-title);
+      font-size: clamp(28px, 3.5vw, 44px);
+      font-weight: 700;
+      color: var(--mf-yellow);
+      margin-bottom: 24px;
+    }
+    .mf-chisiamo-copy p {
+      font-family: var(--mf-font-body);
+      font-size: 16px;
+      color: var(--mf-white);
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .mf-chisiamo-copy p:last-of-type { margin-bottom: 24px; }
+    .mf-chisiamo-copy em { font-style: italic; }
+    .mf-chisiamo-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--mf-yellow);
+      color: var(--mf-navy);
+      font-family: var(--mf-font-body);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 10px 18px;
+      border-radius: 100px;
+    }
+    .mf-chisiamo-foto img {
+      width: 100%;
+      border-radius: 20px;
+      display: block;
+      box-shadow: 0 12px 40px rgba(0, 58, 100, 0.15);
+    }
+    @media (max-width: 860px) {
+      .mf-chisiamo-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .mf-chisiamo-foto { max-width: 400px; margin: 0 auto; width: 100%; }
+      .mf-chisiamo { padding: 56px 24px; }
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .mf-footer {
+      background: var(--mf-navy);
+      border-top: 1px solid rgba(169, 206, 232, 0.15);
+      padding: 28px 24px;
+      text-align: center;
+    }
+    .mf-footer p {
+      font-family: var(--mf-font-body);
+      font-size: 12px;
+      color: rgba(169, 206, 232, 0.55);
+      line-height: 2;
+    }
+    .mf-footer strong {
+      color: rgba(169, 206, 232, 0.8);
+      font-size: 13px;
+    }
+
+    /* ============================================================
+       RESPONSIVE
+       ============================================================ */
+    @media (max-width: 860px) {
+      .mf-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .mf-hero {
+        padding: 28px 24px 40px;
+      }
+      .mf-hero h1 { font-size: 38px; }
+      .mf-hero-subtitle { font-size: 17px; }
+      .mf-form-card {
+        padding: 32px 24px;
+        max-width: 480px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .mf-hero h1 { font-size: 32px; }
+      .mf-hero-subtitle { font-size: 16px; }
+      .mf-form-card { padding: 28px 20px; }
+    }
+
+    /* Loader MailerLite */
+    .ml-form-embedSubmitLoad {
+      display: inline-block; width: 20px; height: 20px;
+    }
+    .ml-form-embedSubmitLoad:after {
+      content: " "; display: block; width: 11px; height: 11px;
+      margin: 1px; border-radius: 50%;
+      border: 4px solid #fff;
+      border-color: #ffffff #ffffff #ffffff transparent;
+      animation: ml-form-embedSubmitLoad 1.2s linear infinite;
+    }
+    @keyframes ml-form-embedSubmitLoad {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px;
+      padding: 0; margin: -1px; overflow: hidden;
+      clip: rect(0,0,0,0); border: 0;
+    }
+    .ml-form-align-center { text-align: center; }
+  </style>
+
+  <!-- Iubenda Cookie Solution -->
+  <script type="text/javascript">
+    var _iub = _iub || [];
+    _iub.csConfiguration = {
+      "siteId": 3720615,
+      "cookiePolicyId": 77626781,
+      "banner": {
+        "backgroundColor": "#ffffff",
+        "textColor": "#003a64",
+        "acceptButtonColor": "#54a2d2",
+        "acceptButtonCaptionColor": "#ffffff",
+        "customizeButtonColor": "#ffffff",
+        "customizeButtonCaptionColor": "#003a64",
+        "customizeButtonBorder": "1px solid #003a64"
+      }
+    };
+    _iub.csLangConfiguration = {"it":{"cookiePolicyId":77626781}};
+  </script>
+  <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3720615.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HERO + FORM
+       ============================================================ -->
+  <section class="mf-hero">
+    <div class="mf-hero-inner">
+
+      <!-- Copy -->
+      <div class="mf-hero-copy">
+        <h1>Vuoi gestire meglio i soldi che guadagni ma <em>non sai da dove iniziare?</em></h1>
+        <p class="mf-hero-subtitle">Hai bisogno di un sistema chiaro, concreto e che funzioni davvero nella vita reale.</p>
+        <p class="mf-hero-detail">Abbiamo creato la mappa del nostro sistema in 5 fasi che ha permesso a noi e a più di 200 persone di costruire stabilità e vivere sereni.</p>
+        <p class="mf-benefit-label">Cosa trovi nella mappa:</p>
+        <ul class="mf-benefit-list">
+          <li>Le 5 fasi del sistema per gestire i soldi con metodo</li>
+          <li>Come costruire un budget che regge agli imprevisti</li>
+          <li>Come tracciare le spese senza impazzire</li>
+          <li>Come risparmiare ogni mese per i tuoi obiettivi concreti</li>
+          <li>Come fare la retrospettiva mensile e migliorare nel tempo</li>
+        </ul>
+      </div>
+
+      <!-- Card Form -->
+      <div class="mf-form-card">
+        <div class="mf-form-card-title">Scarica la Mappa Gratuita</div>
+        <p class="mf-form-card-sub">il sistema in 5 fasi</p>
+
+        <!-- FORM MAILERLITE -->
+        <div id="mlb2-39174043" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-39174043">
+          <div class="ml-form-align-center">
+            <div class="ml-form-embedWrapper embedForm">
+
+              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+                <div class="ml-form-embedContent" style="margin-bottom: 0px;"></div>
+
+                <form class="ml-block-form" action="https://assets.mailerlite.com/jsonp/944524/forms/183348410871449403/subscribe" data-code="" method="post" target="_blank">
+                  <div class="ml-form-formContent">
+                    <div class="ml-form-fieldRow">
+                      <div class="ml-field-group ml-field-name ml-validate-required">
+                        <input aria-label="name" aria-required="true" type="text" class="form-control" data-inputmask="" name="fields[name]" placeholder="Il Tuo Nome" autocomplete="given-name">
+                      </div>
+                    </div>
+                    <div class="ml-form-fieldRow ml-last-item">
+                      <div class="ml-field-group ml-field-email ml-validate-email ml-validate-required">
+                        <input aria-label="email" aria-required="true" type="email" class="form-control" data-inputmask="" name="fields[email]" placeholder="La Tua Migliore Email" autocomplete="email">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="ml-form-checkboxRow ml-validate-required">
+                    <label class="checkbox">
+                      <input type="checkbox">
+                      <div class="label-description">
+                        <p>Ho letto e accetto la normativa sulla <span><a href="https://www.iubenda.com/privacy-policy/77626781" target="_blank">Privacy Policy</a>&nbsp;per ricevere la Mappa e altri contenuti</span>, anche&nbsp;in collaborazione con partner selezionati.</p>
+                      </div>
+                    </label>
+                  </div>
+
+                  <input type="hidden" name="ml-submit" value="1">
+
+                  <div class="ml-form-embedSubmit">
+                    <button type="submit" class="primary">SCARICA LA MAPPA GRATIS</button>
+                    <button disabled="disabled" style="display: none;" type="button" class="loading">
+                      <div class="ml-form-embedSubmitLoad"></div>
+                      <span class="sr-only">Caricamento...</span>
+                    </button>
+                  </div>
+
+                  <input type="hidden" name="anticsrf" value="true">
+                </form>
+              </div>
+
+              <div class="ml-form-successBody row-success" style="display: none">
+                <div class="ml-form-successContent">
+                  <h4>Ti diamo il benvenuto nel club!</h4>
+                  <p>A breve riceverai la mail con la Mappa. Se non la trovi controlla nella cartella SPAM o, se hai Gmail, in PROMOZIONI.</p>
+                  <p>A presto — Dora e Davide</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- / FORM MAILERLITE -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIANZE
+       ============================================================ -->
+  <section class="mf-testimonianze">
+    <div class="mf-testimonianze-inner">
+      <h2>Cosa dice chi ha già iniziato il cambiamento</h2>
+      <div class="mf-testi-grid">
+
+        <div class="mf-testi-card">
+          <div class="mf-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mf-testi-text">Vi ringrazio infinitamente per i vostri preziosi suggerimenti. Grazie a voi negli ultimi mesi ho risparmiato più di quanto pensassi di poter fare. Adesso sto costruendo il mio fondo di emergenza. Non avrei mai pensato di potercela fare. Il merito è soprattutto vostro!</p>
+          <div class="mf-testi-name">Bianca</div>
+        </div>
+
+        <div class="mf-testi-card">
+          <div class="mf-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mf-testi-text">Erano anni che cercavo un metodo valido per gestire le entrate e le spese. Avevo provato a mettere i soldi nelle buste, ma non mi fidavo a tenere tutto in casa, poi carta e penna, poi tante app per tracciare le spese, ma alla fine mi perdevo sempre qualcosa. Adesso finalmente i conti tornano e riesco a risparmiare.</p>
+          <div class="mf-testi-name">Antonio</div>
+        </div>
+
+        <div class="mf-testi-card">
+          <div class="mf-testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="mf-testi-text">Oggi finalmente ho finito di pagare il viaggio per il Giappone, siamo pronti a partire e contestualmente alla nostra partenza rifaremo il nostro bagno. I due desideri che avevamo l'anno scorso prima di iniziare questo percorso sono adesso realtà. Sono davvero felice di avervi incontrato.</p>
+          <div class="mf-testi-name">Giulia C.</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CHI SIAMO
+       ============================================================ -->
+  <section class="mf-chisiamo">
+    <div class="mf-chisiamo-inner">
+      <div class="mf-chisiamo-copy">
+        <h2>Chi siamo</h2>
+        <p>Siamo Dora e Davide, educatori finanziari AIEF e autori del libro <em>"Maleducati Finanziari"</em>.</p>
+        <p>Dieci anni fa eravamo dei veri maleducati finanziari e non avevamo un metodo per gestire i nostri soldi.</p>
+        <p>Abbiamo studiato, sperimentato, sbagliato. E alla fine costruito un sistema che funziona davvero nella vita reale.</p>
+        <p>Poi abbiamo deciso di diventare educatori finanziari per insegnare questo sistema a chi ne aveva bisogno, perché purtroppo in Italia nessuno insegna educazione finanziaria davvero.</p>
+        <div class="mf-chisiamo-badge">&#9734; Educatori Finanziari Certificati AIEF</div>
+      </div>
+      <div class="mf-chisiamo-foto">
+        <img src="foto-dora-davide.jpg" alt="Dora e Davide — Maleducati Finanziari">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="mf-footer">
+    <p>
+      <strong>Maleducati Finanziari</strong><br>
+      Partita IVA: 13069380015 &mdash; Via Cardinale Maurilio Fossati 20, 10141 Torino (TO)
+    </p>
+  </footer>
+
+  <!-- ============================================================
+       MAILERLITE JS
+       ============================================================ -->
+  <script>
+    function ml_webform_success_39174043() {
+      var $ = ml_jQuery || jQuery;
+      $('.ml-subscribe-form-39174043 .row-success').show();
+      $('.ml-subscribe-form-39174043 .row-form').hide();
+    }
+  </script>
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v83147fa8ce2d95cb73ece7f28b469519" type="text/javascript"></script>
+  <script>
+    fetch("https://assets.mailerlite.com/jsonp/944524/forms/183348410871449403/takel")
+  </script>
+
+</body>
+</html>
